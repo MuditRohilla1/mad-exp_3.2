@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Buttons to switch between fragments -->
+    <Button
+        android:id="@+id/linearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Linear"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/absoluteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Absolute"
+        android:layout_toRightOf="@id/linearButton"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/relativeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relative"
+        android:layout_toRightOf="@id/absoluteButton"
+        android:layout_margin="16dp"/>
+
+    <!-- Container for fragments -->
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearButton"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
